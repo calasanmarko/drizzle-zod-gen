@@ -1,0 +1,39 @@
+{
+  "name": "drizzle-zod-gen",
+  "version": "0.1.2",
+  "description": "Transpiles Drizzle ORM schemas into Zod objects with no dependencies. ",
+  "main": "dist/index.js",
+  "scripts": {
+    "publish-npm": "tsc --outDir ./dist && (cp package.json ./dist || xcopy package.json .\\dist /Y) && cd dist && npm publish && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calasanmarko/drizzle-zod-gen.git"
+  },
+  "keywords": [
+    "drizzle",
+    "zod",
+    "generator",
+    "compiler",
+    "parser",
+    "database",
+    "validate",
+    "validation",
+    "pg",
+    "mysql",
+    "postgres",
+    "postgresql",
+    "typescript",
+    "sql"
+  ],
+  "type": "module",
+  "author": "Marko Calasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calasanmarko/drizzle-zod-gen/issues"
+  },
+  "homepage": "https://github.com/calasanmarko/drizzle-zod-gen#readme",
+  "devDependencies": {
+    "drizzle-orm": "^0.28.6"
+  }
+}

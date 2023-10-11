@@ -1,0 +1,6 @@
+{
+    "watch": ["src"],
+    "exec": "(tsc --outDir ./dist && node ./dist/index.js) || exit 1",
+    "ext": "ts",
+    "ignore": ["dist", "node_modules"]
+}
